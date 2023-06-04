@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FarmEasy Homepage</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        text-align: center;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      .btn:hover {
+        background-color: #45a049;
+      }
+
+      .status {
+        text-align: center;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section id="hero">
+        <div class="hero-content">
+          <h1>Welcome to FarmEasy Solutions</h1>
+          <h3>Your Partner in Agricultural Innovation</h3>
+          <a href="#about" class="btn">Learn More</a>
+        </div>
+      </section>
+      <h1>Welcome to FarmEasy!</h1>
+
+      <h2>Select the Season:</h2>
+      <select id="season">
+        <option value="">--Select the option--</option>
+        <option value="spring">Spring</option>
+        <option value="summer">Summer</option>
+        <option value="autumn">Autumn</option>
+        <option value="winter">Winter</option>
+      </select>
+
+      <h2>Select the Crop:</h2>
+      <select id="crop">
+        <option value="">--Select the option--</option>
+        <option value="wheat">Wheat</option>
+        <option value="rice">Rice</option>
+        <option value="corn">Corn</option>
+        <option value="potato">Potato</option>
+        <option value="mirchi">mirchi</option>
+        <option value="brinjal">brinjal</option>
+        <option value="sweet potatoe">sweet potatoe</option>
+        <option value="tomato">tomato</option>
+        <option value="tamarind">tamarind</option>
+        <option value="zamuns">zamuns</option>
+      </select>
+
+      <h2>Select Based on Demand:</h2>
+      <select id="demand">
+        <option value="">--Select the option--</option>
+        <option value="high">High Demand</option>
+        <option value="medium">Medium Demand</option>
+        <option value="low">Low Demand</option>
+      </select>
+
+      <h2>Select Farming Techniques:</h2>
+      <select id="techniques">
+        <option value="">--Select the option--</option>
+        <option value="organic">Organic Farming</option>
+        <option value="hydroponics">Hydroponics</option>
+        <option value="vertical">Vertical Farming</option>
+        <option value="precision">Precision Farming</option>
+      </select>
+
+      <h2for="technology">Select Farming Technology:</h2>
+      <select id="technology">
+        <option value="">--Select the option--</option>
+        <option value="drones">Drones</option>
+        <option value="smart-sensors">Smart Sensors</option>
+        <option value="precision-agriculture">Precision Agriculture</option>
+      </select>
+
+      <h2>Select Irrigation Method:</h2>
+      <select id="irrigation">
+        <option value="spring">--select the option--</option>
+        <option value="drip">Drip Irrigation</option>
+        <option value="sprinkler">Sprinkler Irrigation</option>
+        <option value="flood">Flood Irrigation</option>
+      </select>
+
+      <button class="btn" id="irrigate-btn">Implement Irrigation Method</button>
+
+      <h2>Check Nearby Storage Places:</h2>
+      <button class="btn" id="storage-btn">Find Storage Places</button>
+
+      <h2>Weather Report:</h2>
+      <button class="btn" id="weather-btn">Check Weather</button>
+
+      <div class="status" id="status"></div>
+    </div>
+
+    <script>
+      document
+        .getElementById("irrigate-btn")
+        .addEventListener("click", function () {
+          var selectedIrrigation = document.getElementById("irrigation").value;
+
+          document.getElementById("status").textContent =
+            "Irrigation method implemented!";
+        });
+
+      document
+        .getElementById("storage-btn")
+        .addEventListener("click", function () {
+
+          document.getElementById("status").textContent =
+            "Nearby storage places found!";
+        });
+
+      document
+        .getElementById("weather-btn")
+        .addEventListener("click", function () {
+
+          document.getElementById("status").textContent =
+            "Weather report checked!";
+        });
+    </script>
+  </body>
+</html>
