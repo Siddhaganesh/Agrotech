@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <link rel="stylesheet" href="testing.css">
+</head>
+<body>
+</body>
+</html>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrotech Website</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="http://127.0.0.1:5500/home.html">Home</a></li>
+        <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+        <li><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+        <li><a href="http://127.0.0.1:5500/signup.html">Sign Up</a></li>
+        <li><a href="http://127.0.0.1:5500/login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contact">
+        <br>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For inquiries and more information, please reach out to us:</p>
+            <p>Email: info@farmeasytech.com</p>
+            <p>Phone: +91 70532 64921</p>
+          </section>
+    
+        <a href="http://127.0.0.1:5500/about.html" class="btn">Learn More</a>
+        </section>
+    
+    </main>
+    
+      <footer>
+        <p>&copy; 2023 Agrotech. All rights reserved.</p>
+      </footer>
+    </body>
+    </html>
