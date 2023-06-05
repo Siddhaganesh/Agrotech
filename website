@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <link rel="stylesheet" href="testing.css">
+</head>
+<body>
+</body>
+</html>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrotech Website</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="http://127.0.0.1:5500/home.html">Home</a></li>
+        <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+        <li><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+        <li><a href="http://127.0.0.1:5500/signup.html">Sign Up</a></li>
+        <li><a href="http://127.0.0.1:5500/login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+        <br>
+          <h2>About Us</h2>
+          <p>About FarmEasy Tech Solutions:
+            
+            FarmEasy Tech Solutions is a leading technology company dedicated to revolutionizing the agriculture industry through innovative solutions. Our mission is to empower farmers and agricultural businesses with cutting-edge technologies to enhance productivity, sustainability, and profitability.
+            
+            At FarmEasy, we understand the challenges faced by farmers in today's dynamic agricultural landscape. With the aim of bridging the gap between traditional farming practices and modern advancements, we develop smart and intuitive digital tools that simplify farming operations, optimize resource utilization, and promote data-driven decision-making.
+            
+            Our team of experienced agronomists, engineers, and data scientists collaborate to create comprehensive solutions tailored to the unique needs of farmers. By leveraging the power of artificial intelligence, IoT (Internet of Things), and data analytics, we provide farmers with actionable insights to improve crop yield, manage resources efficiently, and mitigate risks.
+            
+            From precision farming to crop monitoring, irrigation management, and market intelligence, our range of products and services are designed to transform farming practices and enable sustainable agriculture. We believe in empowering farmers with knowledge, enabling them to make informed choices and achieve long-term success.
+            
+            At FarmEasy Tech Solutions, we are committed to making a positive impact on the agriculture industry, promoting sustainable practices, and contributing to food security. We believe that by combining technology, innovation, and agricultural expertise, we can drive positive change and shape the future of farming.
+            
+            Join us in our mission to empower farmers, foster innovation, and build a sustainable future for agriculture.
+            </p>
+        </section>
+    
+      </main>
+    
+      <footer>
+        <p>&copy; 2023 Agrotech. All rights reserved.</p>
+      </footer>
+    </body>
+    </html>
