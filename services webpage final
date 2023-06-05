@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FarmEasy Homepage</title>
+    <style>
+	.image-opacity {
+      opacity: 0.4;
+      max-width: 100%; 
+      height: auto; 
+    }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-image: url("https://cdn.pixabay.com/photo/2016/12/16/13/18/canola-fields-1911392_1280.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        text-align: center;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      .btn:hover {
+        background-color: #45a049;
+      }
+
+      .status {
+        text-align: center;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+    <div class="container">
+      <section id="home">
+        <div class="hero-content">
+          <h1>Welcome to FarmEasy Solutions</h1>
+          <h3>Your Partner in Agricultural Innovation</h3>
+        </div>
+      </section>
+
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <title>Seasonal Crops</title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+          }
+      
+          h1 {
+            margin-bottom: 20px;
+          }
+      
+          select {
+            font-size: 18px;
+            padding: 5px;
+            margin-bottom: 10px;
+          }
+      
+          button {
+            font-size: 18px;
+            padding: 8px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+        </style>
+      </head>
+      <body>
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <title>AgroCrop</title>
+            <style>
+              body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+              }
+          
+              h1 {
+                margin-bottom: 20px;
+              }
+          
+              label {
+                display: block;
+                margin-bottom: 10px;
+              }
+          
+              select {
+                width: 200px;
+                padding: 5px;
+                margin-bottom: 10px;
+              }
+          
+              .demand-info {
+                font-weight: bold;
+                margin-top: 20px;
+              }
+            </style>
+          </head>
+          <body>
+            <h1>AgroTech - Crop Selection</h1>
+          
+            <h2 for="season-select">Select Season:</h2>
+            <select id="season-select" onchange="showCropOptions()">
+              <option value="">--Select--</option>
+              <option value="summer">Summer</option>
+              <option value="winter">Winter</option>
+              <option value="monsoon">Monsoon</option>
+            </select>
+          
+            <div id="crop-options" style="display: none;">
+              <h2 for="crop-select">Select Crop:</h2>
+              <select id="crop-select" onchange="checkCropDemand()"></select>
+            </div>
+          
+            <div id="demand-info" class="demand-info" style="display: none;"></div>
+          
+            <script>
+              var cropOptions = {
+                summer: [
+                  "Tomatoes",
+                  "Cucumbers",
+                  "Watermelons",
+                  "Muskmelons",
+                  "Okra",
+                  "Eggplant",
+                  "Bell Peppers",
+                  "Beans",
+                  "Corn",
+                  "Squash",
+                  "Pumpkins",
+                  "Cabbage",
+                  "Cauliflower",
+                  "Lettuce",
+                  "Spinach",
+                  "Basil",
+                  "Mint",
+                  "Coriander",
+                  "Amaranth",
+                  "Radishes"
+                ],
+                winter: [
+                  "Carrots",
+                  "Radishes",
+                  "Beets",
+                  "Turnips",
+                  "Cabbage",
+                  "Cauliflower",
+                  "Broccoli",
+                  "Brussels Sprouts",
+                  "Kale",
+                  "Spinach",
+                  "Lettuce",
+                  "Swiss Chard",
+                  "Peas",
+                  "Onions",
+                  "Garlic",
+                  "Leeks",
+                  "Celery",
+                  "Parsnips",
+                  "Winter Squash",
+                  "Cilantro"
+                ],
+                monsoon: [
+                  "Rice",
+                  "Maize",
+                  "Millet",
+                  "Sorghum",
+                  "Green Gram",
+                  "Black Gram",
+                  "Soybeans",
+                  "Groundnuts",
+                  "Sesame",
+                  "Cowpea",
+                  "Kidney Beans",
+                  "Bottle Gourd",
+                  "Ridge Gourd",
+                  "Bitter Gourd",
+                  "Sponge Gourd",
+                  "Pumpkin",
+                  "Cucumbers",
+                  "Watermelons",
+                  "Amaranth",
+                  "Indian Spinach"
+                ]
+              };
+          
+
+              function showCropOptions() {
+                var seasonSelect = document.getElementById("season-select");
+                var cropSelect = document.getElementById("crop-select");
+                var selectedSeason = seasonSelect.value;
+          
+                cropSelect.innerHTML = ""; 
+          
+                if (selectedSeason !== "") {
+                  var crops = cropOptions[selectedSeason];
+                  for (var i = 0; i < crops.length; i++) {
+                    var option = document.createElement("option");
+                    option.text = crops[i];
+                    cropSelect.add(option);
+                  }
+          
+                  document.getElementById("crop-options").style.display = "block";
+                  document.getElementById("demand-info").style.display = "none";
+                } else {
+                  document.getElementById("crop-options").style.display = "none";
+                  document.getElementById("demand-info").style.display = "none";
+                }
+              }
+          
+              function checkCropDemand() {
+                var cropSelect = document.getElementById("crop-select");
+                var selectedCrop = cropSelect.value;
+          
+                if (selectedCrop !== "") {
+                  var selectedSeason = document.getElementById("season-select").value;
+                  var demandInfo = document.getElementById("demand-info");
+          
+                  if (selectedSeason === "summer" && selectedCrop === "Tomatoes") {
+                    demandInfo.textContent = "Crop is in high demand. Good profit potential.";
+                  } else if (selectedSeason === "winter" && selectedCrop === "Carrots") {
+                    demandInfo.textContent = "Crop is in high demand. Good profit potential.";
+                  } else if (selectedSeason === "monsoon" && selectedCrop === "Rice") {
+                    demandInfo.textContent = "Crop is in high demand. Good profit potential.";
+                  } else {
+                    demandInfo.textContent = "Crop is in normal demand. Moderate profit potential.";
+                  }
+          
+                  demandInfo.style.display = "block";
+                } else {
+                  document.getElementById("demand-info").style.display = "none";
+                }
+              }
+            </script>
+          </body>
+          </html>
+          
+
+      <h2>Select Farming Techniques:</h2>
+      <select id="techniques">
+        <option value="">--Select the option--</option>
+        <option value="organic">Organic Farming</option>
+        <option value="hydroponics">Hydroponics</option>
+        <option value="vertical">Vertical Farming</option>
+        <option value="precision">Precision Farming</option>
+      </select>
+
+      <h2>Select Farming Technology:</h2>
+      <select id="technology">
+        <option value="">--Select the option--</option>
+        <option value="drones">Drones</option>
+        <option value="smart-sensors">Smart Sensors</option>
+        <option value="precision-agriculture">Precision Agriculture</option>
+      </select>
+
+      <h2>Select Irrigation Method:</h2>
+      <select id="irrigation">
+        <option value="spring">--select the option--</option>
+        <option value="drip">Drip Irrigation</option>
+        <option value="sprinkler">Sprinkler Irrigation</option>
+        <option value="flood">Flood Irrigation</option>
+      </select>
+
+      <button class="btn" id="irrigate-btn">Implement Irrigation Method</button>
+
+      <h2>Check Nearby Storage Places:</h2>
+      <button class="btn" id="storage-btn">Find Storage Places</button>
+
+      <!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Report</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .weather-card {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .weather-card h2 {
+      margin-top: 0;
+    }
+
+    .weather-card p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Weather Report</h1>
+
+
+    <h2>Today's Weather</h2>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/20d5978d96/india/" data-label_1="INDIA" data-theme="original" >INDIA</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<footer>
+  <p>&copy; 2023 Agrotech. All rights reserved.</p>
+</footer>
+</body>
+</html>
