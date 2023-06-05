@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <link rel="stylesheet" href="testing.css">
+</head>
+<body>
+</body>
+</html>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrotech Website</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="http://127.0.0.1:5500/home.html">Home</a></li>
+        <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+        <li><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+        <li><a href="http://127.0.0.1:5500/signup.html">Sign Up</a></li>
+        <li><a href="http://127.0.0.1:5500/login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<body>
+  <h2>Sign Up</h2>
+  <form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+    <label for="confirm-password">Confirm Password:</label>
+    <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+    <input type="submit" value="Sign Up">
+  </form>
+  <footer>
+    <p>&copy; 2023 Agrotech. All rights reserved.</p>
+  </footer>
+  
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault(); 
+
+      const username = event.target[0].value;
+      const password = event.target[1].value;
+
+      window.location.href = "http://127.0.0.1:5500/services.html";
+    }
+
+    document.getElementById("signupForm").addEventListener("submit", handleSubmit);
+  </script>
+</body>
+</html>
